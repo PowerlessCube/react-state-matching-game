@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Tile.css";
 
-const Tile = (props) => {
+const Tile = ({ props }) => {
   const dynamicColour =
     props.selected || props.matched ? { backgroundColor: props.color } : null;
 

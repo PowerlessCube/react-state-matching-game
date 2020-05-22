@@ -3,7 +3,7 @@ import Tile from "../Tile";
 import "./Board.css";
 
 const Board = ({ numTiles, tiles }) => {
-  const tileComponents = tiles.map((tile) => <Tile tile={{ ...tile }} />);
+  const tileComponents = tiles.map((tile) => <Tile {...tile} />);
 
   const gridConfig = {
     gridTemplateColumns: `repeat(${Math.sqrt(numTiles)}, 1fr)`,
