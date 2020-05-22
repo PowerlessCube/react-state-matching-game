@@ -8,7 +8,7 @@ const Tile = (props) => {
 
   return (
     <div
-      onClick={() => props.handTileClicked(props.id, props.color)}
+      onClick={() => props.handleTileClicked(props.id, props.color)}
       style={dynamicColour}
       className="Tile"
     >
